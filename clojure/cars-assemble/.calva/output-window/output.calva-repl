@@ -1,0 +1,65 @@
+; This is the Calva evaluation results output window.
+; TIPS: The keyboard shortcut `ctrl+alt+o o` shows and focuses this window
+;   when connected to a REPL session.
+; Please see https://calva.io/output/ for more info.
+; Happy coding! ♥️
+
+; Jacking in...
+; Starting Jack-in Terminal: bb --nrepl-server 63116
+; Jacking in...
+; Starting Jack-in Terminal: npx nbb nrepl-server :port 63184
+; Jacking in...
+; Connecting ...
+; No nrepl port file found.
+; Connecting ...
+; No nrepl port file found.
+; Connecting ...
+; No nrepl port file found.
+; Jacking in...
+; Starting Jack-in Terminal: lein update-in :dependencies conj '[nrepl,"0.9.0"]' -- update-in :plugins conj '[cider/cider-nrepl,"0.28.5"]' -- update-in '[:repl-options,:nrepl-middleware]' conj '["cider.nrepl/cider-middleware"]' -- repl :headless
+; Hooking up nREPL sessions...
+; Connected session: clj
+; TIPS:
+;   - You can edit the contents here. Use it as a REPL if you like.
+;   - `alt+enter` evaluates the current top level form.
+;   - `ctrl+enter` evaluates the current form.
+;   - `alt+up` and `alt+down` traverse up and down the REPL command history
+;      when the cursor is after the last contents at the prompt
+;   - Clojure lines in stack traces are peekable and clickable.
+clj꞉user꞉>  ; Use `alt+enter` to evaluate
+; Jack-in done.
+clj꞉user꞉> 
+nil
+clj꞉cars-assemble꞉> 
+#'cars-assemble/capacity
+clj꞉cars-assemble꞉> 
+; Syntax error compiling at (cars_assemble.clj:4:18).
+; Unable to resolve symbol: .9 in this context
+clj꞉cars-assemble꞉> 
+; Syntax error compiling at (cars_assemble.clj:4:18).
+; Unable to resolve symbol: .9M in this context
+clj꞉cars-assemble꞉> 
+#'cars-assemble/capacity-90
+clj꞉cars-assemble꞉> 
+#'cars-assemble/capacity-80
+clj꞉cars-assemble꞉> 
+#'cars-assemble/capacity-77
+clj꞉cars-assemble꞉> 
+#'cars-assemble/production-rate
+clj꞉cars-assemble꞉> (production-rate 0)
+0
+clj꞉cars-assemble꞉> (production-rate 4)
+884
+clj꞉cars-assemble꞉> (production-rate 1)
+221
+clj꞉cars-assemble꞉> (production-rate 3)
+663
+clj꞉cars-assemble꞉> (production-rate 5)
+994.5M
+clj꞉cars-assemble꞉> (production-rate 8)
+1591.2M
+clj꞉cars-assemble꞉> (production-rate 9)
+1790.1000000000001
+clj꞉cars-assemble꞉> (production-rate 10)
+1547.0
+clj꞉cars-assemble꞉> 
