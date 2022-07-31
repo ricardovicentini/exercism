@@ -1,0 +1,168 @@
+; Connecting ...
+; No nrepl port file found.
+; Hooking up nREPL sessions...
+; Interrupting Jack-in process.
+; Jacking in...
+; Starting Jack-in Terminal: lein update-in :dependencies conj '[nrepl,"0.9.0"]' -- update-in :plugins conj '[cider/cider-nrepl,"0.28.5"]' -- update-in '[:repl-options,:nrepl-middleware]' conj '["cider.nrepl/cider-middleware"]' -- repl :headless
+; Hooking up nREPL sessions...
+; Connected session: clj
+; TIPS:
+;   - You can edit the contents here. Use it as a REPL if you like.
+;   - `alt+enter` evaluates the current top level form.
+;   - `ctrl+enter` evaluates the current form.
+;   - `alt+up` and `alt+down` traverse up and down the REPL command history
+;      when the cursor is after the last contents at the prompt
+;   - Clojure lines in stack traces are peekable and clickable.
+clj꞉user꞉> 
+; Jack-in done.
+clj꞉user꞉> 
+; Evaluating file: bird_watcher.clj
+#'bird-watcher/odd-week?
+clj꞉bird-watcher꞉> last-week
+                   
+
+
+                   
+; nREPL Connection was closed
+; Jacking in...
+; Starting Jack-in Terminal: lein update-in :dependencies conj '[nrepl,"0.9.0"]' -- update-in :plugins conj '[cider/cider-nrepl,"0.28.5"]' -- update-in '[:repl-options,:nrepl-middleware]' conj '["cider.nrepl/cider-middleware"]' -- repl :headless
+; Hooking up nREPL sessions...
+; Connected session: clj
+; TIPS:
+;   - You can edit the contents here. Use it as a REPL if you like.
+;   - `alt+enter` evaluates the current top level form.
+;   - `ctrl+enter` evaluates the current form.
+;   - `alt+up` and `alt+down` traverse up and down the REPL command history
+;      when the cursor is after the last contents at the prompt
+;   - Clojure lines in stack traces are peekable and clickable.
+clj꞉user꞉> 
+; Jack-in done.
+clj꞉user꞉> 
+; Evaluating file: bird_watcher.clj
+#'bird-watcher/odd-week?
+clj꞉bird-watcher꞉> 
+#'bird-watcher/odd-week?
+clj꞉bird-watcher꞉> last-week
+
+[0 2 5 3 7 8 4]
+clj꞉bird-watcher꞉> (inc-bird last-week)
+[0 2 5 3 7 8 5]
+clj꞉bird-watcher꞉> (inc-bird last-week)
+[0 2 5 3 7 8 5]
+clj꞉bird-watcher꞉> (count last-week)
+; Syntax error compiling at (output.calva-repl:52:20).
+; Unable to resolve symbol: last-week in this context
+clj꞉bird-watcher꞉> last-week
+; Syntax error compiling at (output.calva-repl:1:7720).
+; Unable to resolve symbol: last-week in this context
+clj꞉bird-watcher꞉> 
+; Evaluating file: bird_watcher.clj
+#'bird-watcher/odd-week?
+clj꞉bird-watcher꞉> last-week
+[0 2 5 3 7 8 4]
+clj꞉bird-watcher꞉> (count last-week)
+
+clj꞉bird-watcher꞉> (update last-week 6 inc)
+[0 2 5 3 7 8 5]
+clj꞉bird-watcher꞉> (some zero? last-week)
+true
+clj꞉bird-watcher꞉> (reduce + last-week)
+29
+clj꞉bird-watcher꞉> (-> last-week reduce +)
+; Execution error (ArityException) at bird-watcher/eval9651 (form-init7202984870659051156.clj:71).
+; Wrong number of args (1) passed to: clojure.core/reduce
+clj꞉bird-watcher꞉> (->> last-week reduce +)
+; Execution error (ArityException) at bird-watcher/eval9653 (form-init7202984870659051156.clj:74).
+; Wrong number of args (1) passed to: clojure.core/reduce
+clj꞉bird-watcher꞉> (today)
+; Execution error (ArityException) at bird-watcher/eval9655 (form-init7202984870659051156.clj:77).
+; Wrong number of args (0) passed to: bird-watcher/today
+clj꞉bird-watcher꞉> (def today last)
+#'bird-watcher/today
+clj꞉bird-watcher꞉> (today)
+; Execution error (ArityException) at bird-watcher/eval9657 (form-init7202984870659051156.clj:82).
+; Wrong number of args (0) passed to: clojure.core/last--5413
+clj꞉bird-watcher꞉> (today last-week)
+4
+clj꞉bird-watcher꞉> 
+; Evaluating file: bird_watcher.clj
+#'bird-watcher/odd-week?
+clj꞉bird-watcher꞉> today
+#function[clojure.core/last--5413]
+clj꞉bird-watcher꞉> (today)
+; Execution error (ArityException) at bird-watcher/eval9691 (form-init7202984870659051156.clj:92).
+; Wrong number of args (0) passed to: clojure.core/last--5413
+clj꞉bird-watcher꞉> (today last-week)
+4
+clj꞉bird-watcher꞉> (today last-week)
+; nREPL Connection was closed
+; Jacking in...
+; Starting Jack-in Terminal: lein update-in :dependencies conj '[nrepl,"0.9.0"]' -- update-in :plugins conj '[cider/cider-nrepl,"0.28.5"]' -- update-in '[:repl-options,:nrepl-middleware]' conj '["cider.nrepl/cider-middleware"]' -- repl :headless
+; Hooking up nREPL sessions...
+; Connected session: clj
+; TIPS:
+;   - You can edit the contents here. Use it as a REPL if you like.
+;   - `alt+enter` evaluates the current top level form.
+;   - `ctrl+enter` evaluates the current form.
+;   - `alt+up` and `alt+down` traverse up and down the REPL command history
+;      when the cursor is after the last contents at the prompt
+;   - Clojure lines in stack traces are peekable and clickable.
+clj꞉user꞉> 
+; Jack-in done.
+clj꞉user꞉> (today last-week)
+; Syntax error compiling at (output.calva-repl:112:12).
+; Unable to resolve symbol: today in this context
+clj꞉user꞉> 
+; Evaluating file: bird_watcher.clj
+#'bird-watcher/odd-week?
+clj꞉bird-watcher꞉> (today last-week)
+4
+clj꞉bird-watcher꞉> 
+today
+#function[clojure.core/last--5413]
+clj꞉bird-watcher꞉> (-> last-week today inc)
+5
+clj꞉bird-watcher꞉> (conj last-week (-> last-week today inc))
+[0 2 5 3 7 8 4 5]
+clj꞉bird-watcher꞉> last-week
+[0 2 5 3 7 8 4]
+clj꞉bird-watcher꞉> (pop last-week)
+[0 2 5 3 7 8]
+clj꞉bird-watcher꞉> (pos? 0)
+false
+clj꞉bird-watcher꞉> (pos? -1)
+false
+clj꞉bird-watcher꞉> (pos? 1)
+true
+clj꞉bird-watcher꞉> (every? pos? last-week)
+false
+clj꞉bird-watcher꞉> (reduce + last-week)
+29
+clj꞉bird-watcher꞉> (-> last-week reduce +)
+; Execution error (ArityException) at bird-watcher/eval9603 (form-init7746122130873677486.clj:141).
+; Wrong number of args (1) passed to: clojure.core/reduce
+clj꞉bird-watcher꞉> (->> last-week reduce +)
+; Execution error (ArityException) at bird-watcher/eval9605 (form-init7746122130873677486.clj:144).
+; Wrong number of args (1) passed to: clojure.core/reduce
+clj꞉bird-watcher꞉> (-> last-week (reduce +))
+; Execution error (IllegalArgumentException) at bird-watcher/eval9607 (form-init7746122130873677486.clj:147).
+; Don't know how to create ISeq from: clojure.core$_PLUS_
+clj꞉bird-watcher꞉> (->> last-week
+       (take n)
+       (reduce +))
+; Syntax error compiling at (output.calva-repl:151:8).
+; Unable to resolve symbol: n in this context
+clj꞉bird-watcher꞉> (->> last-week
+                        (take 4)
+                        (reduce +))
+10
+clj꞉bird-watcher꞉> (->> last-week
+                        
+                        (reduce +))
+29
+clj꞉bird-watcher꞉> (->> last-week (reduce +))
+29
+clj꞉bird-watcher꞉> (->> last-week reduce +)
+; Execution error (ArityException) at bird-watcher/eval9616 (form-init7746122130873677486.clj:165).
+; Wrong number of args (1) passed to: clojure.core/reduce
+clj꞉bird-watcher꞉> 

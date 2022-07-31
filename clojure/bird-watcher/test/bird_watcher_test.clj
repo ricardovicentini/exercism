@@ -4,7 +4,7 @@
 
 (deftest last-week-test
   (testing " last-week constant")
-  (is (= [0 2 5 3 7 8 4] #nu/tap bird-watcher/last-week)))
+  (is (= [0 2 5 3 7 8 4] bird-watcher/last-week)))
 
 (deftest today-disappointing-week-test
   (testing "Today's bird count of disappointing week"

@@ -2,12 +2,13 @@
 
 (def last-week [0 2 5 3 7 8 4])
 
-(defn today [birds] (last birds))
+;;(defn today [birds] (last birds))
+(def today last)
 
 (defn inc-bird [birds] 
-   (def last-week (assoc birds 6
-                         (-> birds today inc)))
-  last-week)
+   (let [last-week (assoc birds 6
+                          (-> birds today inc))]
+     last-week))
 
 (defn day-without-birds? [birds]
   (true? (some #(< % 1) birds)))
